@@ -1,0 +1,442 @@
+/*顶部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.top .top_in{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+/*顶部左边*/
+.top .topLeft{
+    width: 190px;
+    height: 60px;
+    float: left;
+}
+.top .topLeft>h1{
+    width: 100%;
+    height: 100%;
+}
+.top .topLeft>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-logo.png");
+}
+/*顶部右边*/
+.top .topRight{
+    float: right;
+    width: 740px;
+    height: 60px;
+}
+/*顶部导航*/
+.top .topRight .topNav{
+    float: left;
+    width: 550px;
+    height: 60px;
+}
+.top .topRight .topNav>li{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+    line-height: 60px;
+}
+.top .topRight .topNav>li a{
+    color: #fff;
+}
+.top .topRight .topNav>li a:hover{
+    color: red;
+}
+/*登录区域*/
+.top .topRight .topLinks{
+    float: right;
+    width: 150px;
+    height: 60px;
+}
+.top .topRight .topLinks>li{
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.top .topRight .topLinks>li a{
+    color: #ccc;
+}
+.top .topRight .topLinks>li:nth-child(3){
+    background: url("../images/nubia-syb-all.png");
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+/*广告区域*/
+.ad{
+    width: 100%;
+    height: 860px;
+    margin-top: 60px;
+}
+/*广告区域-导航*/
+.ad .ad_in{
+    width: 100%;
+    height: 121px;
+    background-color: #ccc;
+    overflow: hidden;
+    position: absolute;
+    z-index: 998;
+}
+.ad .ad_in ul{
+    width: 1200px;
+    height: 121px;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+}
+.ad .ad_in ul li{
+    width: 150px;
+    height: 100%;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.ad .ad_in ul li:hover{
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+.ad .ad_in ul li>p{
+    width: 150px;
+    text-align: center;
+}
+.ad .ad_in ul li a>img{
+    margin-top: 15px;
+    width: 120px;
+    height: 80px;
+}
+/*广告区域-banner*/
+.ad .banner{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.ad .banner>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.ad .banner ul{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -75px;
+}
+.ad .banner ul li{
+    height: 8px;
+    width: 8px;
+    background-color: #ccc;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    float: left;
+    margin-left: 15px;
+    transition: all 1s;
+}
+.ad .banner ul li:hover{
+    border: 2px solid red;
+    transform: scale(1.2,1.2);
+}
+/*广告区域-video*/
+.ad .video{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.ad .video>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ad .video>ul>li{
+    list-style: none;
+    float: left;
+    width: 396px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #000;
+}
+.ad .video>ul>li>img{
+    height: 250px;
+    margin: 0 -100%;
+}
+.ad .video .video_info>h3{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.ad .video .video_info>p{
+    margin-top: 10px;
+    color: #fff;
+}
+.ad .video .video_info{
+    opacity: 0;
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.ad .video>ul>li:hover>img{
+    opacity:0.5;
+}
+.ad .video>ul>li:hover .video_info{
+    opacity:1;
+}
+.ad .video>ul>li:hover .video_info>img{
+    animation: sport 2s .5s ease-in-out infinite;
+}
+@keyframes sport {
+    20%{transform: scale(.8);}
+    40%{transform: scale(1.2);}
+    60%{transform: scale(.9);}
+    80%{transform: scale(1);}
+    100%{transform: scale(1);}
+}
+/*内容区域*/
+.content{
+    width: 100%;
+    height: 1883px;
+}
+/*内容区域-最新产品*/
+.content>dl{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content>dl>dt{
+    text-align: center;
+}
+.content>dl>dt>h3{
+    margin-top: 40px;
+    font-size: 35px;
+    color: #333;
+}
+.content>dl>dt>p{
+    margin-top: 20px;
+    color: #e8340e;
+}
+.content .content_phone{
+    width: 1200px;
+    height: 1200px;
+    margin-top: 30px;
+}
+.content .content_phone>li{
+    float: left;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.content .content_phone>li:nth-child(1){
+    width: 1200px;
+    height: 395px;
+    margin-bottom: 10px;
+}
+.content .content_phone>li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    margin-right: 10px;
+}
+.content .content_phone>li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    margin-bottom: 10px;
+}
+.content .content_phone>li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    margin-right: 10px;
+}
+.content .content_phone>li:nth-child(5){
+    width: 395px;
+    height: 395px;
+}
+.content .content_phone>li>img{
+    width: 100%;
+    transition: all 1s;
+}
+.content .content_phone>li:nth-child(1)>img{
+    margin-top: 60px;
+    margin-left: -100px;
+}
+.content .content_phone>li:nth-child(3)>img{
+    margin-left: 100px;
+}
+.content .content_phone>li:nth-child(1):hover>img{
+    margin-left: 0px;
+}
+.content .content_phone>li:nth-child(3):hover>img{
+    margin-left: 0px;
+}
+.content .content_phone>li:hover .img_scale{
+    transform: scale(1.2,1.2);
+}
+.content .content_phone .phone_des{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -100px;
+    text-align: center;
+}
+.content .content_phone>li:nth-child(1)>div{
+    bottom: 150px;
+    left: 0%;
+    margin-left: 800px;
+}
+.content .content_phone .phone_des>h4{
+    font-size: 20px;
+    color: #000;
+}
+.content .content_phone .phone_des>p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content .content_phone .phone_des>span{
+    display: inline-block;
+    width: 108px;
+    line-height: 32px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    color: #000;
+}
+/*内容区域-精选配件*/
+.content .content_accessories{
+    width: 1200px;
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_accessories>li{
+    width: 295px;
+    height: 300px;
+    float: left;
+    background-color: #fff;
+    overflow: hidden;
+}
+.content .content_accessories>li>img{
+    width: 100%;
+    transition: all .5s;
+}
+.content .content_accessories>li>p{
+    text-align: center;
+    margin-top: 25px;
+}
+.content .content_accessories>li:hover img{
+    transform: scale(1.2,1.2);
+}
+/*底部区域*/
+.footer{
+    width: 100%;
+    height: 396px;
+    margin-top: 40px;
+}
+.footer .footer_in{
+    width: 1200px;
+    height: 396px;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.footer .footer_in .footer_center{
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.footer .footer_in .footer_center>dl{
+    float: left;
+    width: 200px;
+}
+.footer .footer_in .footer_center>dl>dt{
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer .footer_in .footer_center>dl>dd{
+    line-height: 20px;
+}
+.footer .footer_in .footer_center>dl>dd:hover a{
+    color: red;
+}
+.footer .footer_in .footer_copyright{
+    float: left;
+}
+.footer .footer_in .footer_copyright>li{
+    float: left;
+}
+.footer .footer_in .footer_copyright>li>a{
+    padding: 10px;
+    font-size: 10px;
+}
+.footer .footer_in .footer_copyright>li:first-child a{
+    padding-left: 0;
+}
+.footer .footer_in .footer_copyright>li:last-child a{
+    padding-right: 0;
+}
+.footer .footer_in .footer_copyright>li:hover a{
+    color: #000;
+}
+.footer .footer_in .footer_social{
+    float: left;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.footer .footer_in .footer_social>li{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+.footer .footer_in .footer_social>li>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-syb-all.png");
+}
+.footer .footer_social>li:nth-child(1) a{
+    background-position: -246px 0;
+}
+.footer .footer_social>li:nth-child(2) a{
+    background-position: -186px 0;
+}
+.footer .footer_social>li:nth-child(3) a{
+    background-position: -126px 0;
+}
+.footer .footer_social>li:nth-child(4) a{
+    background-position: -156px 0;
+}
+.footer .footer_bottom>p{
+    font-size: 10px;
+    line-height: 30px;
+    float: left;
+}
